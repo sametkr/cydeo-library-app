@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "com/library/step_definitions",
         publish = false,
         dryRun = false,
-        tags = "@withParameters"
+        tags = "@oneStep"
 )
 public class Runner {
 }

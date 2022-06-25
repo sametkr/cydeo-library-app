@@ -51,8 +51,16 @@ public class Login_StepDefinitions {
     public void user_enters_username(String string) {
         page.emailInput.sendKeys(string);
     }
+
     @When("user enters password {string}")
     public void user_enters_password(String string) {
         page.passwordInput.sendKeys(string);
+    }
+
+    @When("user enters username {string}, password {string} and clicks signIn Button")
+    public void user_enters_username_password_and_clicks_sign_ın_button(String username, String password) {
+        page.emailInput.sendKeys(username);
+        page.passwordInput.sendKeys(password);
+        page.signInButton.click();
     }
 }
