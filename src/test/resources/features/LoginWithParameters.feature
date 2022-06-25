@@ -25,5 +25,5 @@ Feature: Library app login feature
 
   @oneStep
   Scenario: Login as librarian
-    When user enters username "librarian1@library", password "rs4BNN9G" and clicks signIn Button
+    When user enters username "librarian1@library", password "rs4BNN9G" and clicks sign-in Button
     Then user should see the user avatar
