@@ -46,4 +46,13 @@ public class Login_StepDefinitions {
     public void user_should_see_the_user_avatar() {
         Assert.assertTrue(page.userAvatar.isDisplayed());
     }
+
+    @When("user enters username {string}")
+    public void user_enters_username(String string) {
+        page.emailInput.sendKeys(string);
+    }
+    @When("user enters password {string}")
+    public void user_enters_password(String string) {
+        page.passwordInput.sendKeys(string);
+    }
 }
