@@ -10,7 +10,7 @@ Feature: Library app login feature
   Scenario Outline: Login with different credentials
     When user enters username "<username>"
     And user enters password "<password>"
-    And user clicks signIn button
+    And user clicks sign-in button
     Then user should see username in the account section
 
     Examples: valid credentials we are going to be using in this scenario is as below

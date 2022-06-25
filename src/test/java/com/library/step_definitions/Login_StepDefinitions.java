@@ -39,7 +39,7 @@ public class Login_StepDefinitions {
         page.passwordInput.sendKeys("i2A9TgXa");
     }
 
-    @When("user clicks signIn button")
+    @When("user clicks sign-in button")
     public void user_clicks_sign_in_button() {
         page.signInButton.click();
     }

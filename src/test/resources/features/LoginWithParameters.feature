@@ -13,14 +13,14 @@ Feature: Library app login feature
   Scenario: Login as librarian
     When user enters username "librarian1@library"
     And user enters password "rs4BNN9G"
-    And user clicks signIn button
+    And user clicks sign-in button
     Then user should see the user avatar
 
   @student
   Scenario: Login as student
     When user enters username "student1@library"
     And user enters password "i2A9TgXa"
-    And user clicks signIn button
+    And user clicks sign-in button
     Then user should see the user avatar
 
   @oneStep

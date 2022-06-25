@@ -13,14 +13,14 @@ Feature: Library app login feature
   Scenario: Login as librarian
     When user enters librarian username
     And user enters librarian password
-    And user clicks signIn button
+    And user clicks sign-in button
     Then user should see the user avatar
 
   @student
   Scenario: Login as student
     When user enters student username
     And user enters student password
-    And user clicks signIn button
+    And user clicks sign-in button
     Then user should see the user avatar
 
 
