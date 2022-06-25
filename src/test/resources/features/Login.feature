@@ -10,15 +10,15 @@ Feature: Library app login feature
 
   @librarian
   Scenario: Login as librarian
-    When user enters username "librarian1@library"
-    And user enters password "rs4BNN9G"
+    When user enters librarian username
+    And user enters librarian password
     And user clicks signIn button
     Then user should see the user avatar
 
   @student
   Scenario: Login as student
-    When user enters username "student1@library"
-    And user enters password "i2A9TgXa"
+    When user enters student username
+    And user enters student password
     And user clicks signIn button
     Then user should see the user avatar
 

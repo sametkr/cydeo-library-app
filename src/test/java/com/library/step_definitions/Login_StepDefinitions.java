@@ -16,18 +16,32 @@ public class Login_StepDefinitions {
     public void user_is_on_the_login_page() {
         Driver.getDriver().get(ConfigurationProperties.getProperty("url"));
     }
-    @When("user enters username {string}")
-    public void user_enters_username(String string) {
-        page.emailInput.sendKeys(string);
+
+    @When("user enters librarian username")
+    public void user_enters_librarian_username() {
+        page.emailInput.sendKeys("librarian1@library");
     }
-    @When("user enters password {string}")
-    public void user_enters_password(String string) {
-        page.passwordInput.sendKeys(string);
+
+    @When("user enters librarian password")
+    public void user_enters_librarian_password() {
+        page.passwordInput.sendKeys("rs4BNN9G");
     }
+
+    @When("user enters student username")
+    public void user_enters_student_username() {
+        page.emailInput.sendKeys("student1@library");
+    }
+
+    @When("user enters student password")
+    public void user_enters_student_password() {
+        page.passwordInput.sendKeys("i2A9TgXa");
+    }
+
     @When("user clicks signIn button")
     public void user_clicks_sign_ın_button() {
         page.signInButton.click();
     }
+
     @Then("user should see the user avatar")
     public void user_should_see_the_user_avatar() {
         Assert.assertTrue(page.userAvatar.isDisplayed());
