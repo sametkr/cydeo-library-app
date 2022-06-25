@@ -40,7 +40,7 @@ public class Login_StepDefinitions {
     }
 
     @When("user clicks signIn button")
-    public void user_clicks_sign_ın_button() {
+    public void user_clicks_sign_in_button() {
         page.signInButton.click();
     }
 

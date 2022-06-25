@@ -10,12 +10,13 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
-                "json:target/cucumber.json" },
+                "json:target/cucumber.json"
+                },
         features = "src/test/resources/features",
         glue = "com/library/step_definitions",
         publish = false,
         dryRun = false,
-        tags = "@wip"
+        tags = ""
 )
 public class Runner {
 }
