@@ -19,4 +19,7 @@ public class DashboardPage {
 
     @FindBy(xpath = "//span[.='Books']")
     public WebElement booksButton;
+
+    @FindBy(xpath = "//a[@id='navbarDropdown']")
+    public WebElement accountSection;
 }

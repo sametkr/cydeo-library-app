@@ -1,5 +1,6 @@
 package com.library.step_definitions;
 
+import com.library.pages.DashboardPage;
 import com.library.pages.LoginPage;
 import com.library.utilities.ConfigurationProperties;
 import com.library.utilities.Driver;
@@ -11,6 +12,7 @@ import org.junit.Assert;
 public class Login_StepDefinitions {
 
     LoginPage page = new LoginPage();
+    DashboardPage dashboardPage = new DashboardPage();
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
@@ -62,5 +64,10 @@ public class Login_StepDefinitions {
         page.emailInput.sendKeys(username);
         page.passwordInput.sendKeys(password);
         page.signInButton.click();
+    }
+
+    @Then("user should see username in the account section")
+    public void user_should_see_username_in_the_account_section() {
+        Assert.assertTrue(dashboardPage.accountSection.isDisplayed());
     }
 }
