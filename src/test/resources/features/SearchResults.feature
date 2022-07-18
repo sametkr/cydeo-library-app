@@ -1,3 +1,4 @@
+@search
 Feature: Library app search feature
   User story:
     - As a user, I should be able to login as librarian. When I go to Users
